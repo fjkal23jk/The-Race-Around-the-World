@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Stop Watch</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <h1>Stop Watch WEB form</h1>
+
+      <div id="stopwatch_display">
+        00:00:00:00
+      </div>
+
+      <div id="controls">
+        <input type="button" value="Start" onclick="changeButton()" id="startButton">
+        <br />
+        <input type="reset" value="Reset" id="resetTable" onclick="reset()">
+      </div>
+
+      <table id="histTable">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Start Time: </th>
+            <th>Latitude: </th>
+            <th>Longtitude: </th>
+            <th>Time Elapsed: </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th id="rowNumber"></th>
+            <th id="startTime"></th>
+            <th id="latitue"></th>
+            <th id="longtitude"></th>
+            <th id="timeElapsed"></th>
+          </tr>
+        </tbody>
+      </table>
+
+
+      <script type="text/javascript" src="scripts.js"></script>
+      <script type="text/javascript" scr="reset.js"></script>
+    </body>
+
+
+
+
+</html>
